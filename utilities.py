@@ -17,10 +17,10 @@ def init_props():
     name="GPT Model",
     description="Select the GPT model to use",
     items=[
-        ("gpt-4", "GPT-4 (powerful, expensive)", "Use GPT-4"),
-        ("gpt-3.5-turbo", "GPT-3.5 Turbo (less powerful, cheaper)", "Use GPT-3.5 Turbo"),
+        ("gpt-4o", "GPT-4o (powerful, expensive)", "Use GPT-4o"),
+        ("gpt-4o-mini", "GPT-4o mini (less powerful, cheaper)", "Use GPT-4o mini"),
     ],
-    default="gpt-4",
+    default="gpt-4o",
 )
     bpy.types.Scene.gpt4_chat_input = bpy.props.StringProperty(
         name="Message",
